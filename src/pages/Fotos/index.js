@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container } from '../../styles/GlobalStyles';
 
-export default function Register() {
+export default function Fotos() {
   return (
     <Container>
-      <h1>Register</h1>
+      <h1>Fotos</h1>
     </Container>
   );
 }

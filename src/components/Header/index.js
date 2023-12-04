@@ -18,7 +18,7 @@ export default function Header() {
         <FaUserAlt />
       </Link>
 
-      <Link to="/asd">
+      <Link to="/register">
         <FaSignInAlt size={24} />
       </Link>
       {botaoClicado ? 'clicado' : 'não clicado'}
