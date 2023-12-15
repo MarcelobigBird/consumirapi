@@ -1,16 +1,30 @@
 import styled from 'styled-components';
+import * as colors from '../../config/colors';
 
-export const Title = styled.h1`
-  background: green;
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 
-  small {
-    font-size: 12px;
-    margin-left: 15px;
-    color: #999;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
-`;
+  input {
+    height: 40px;
+    font-size: 18px;
+    border: 0 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-top: 5px;
 
-export const Paragraph = styled.p`
-  font-size: 50px;
+    &:focus {
+      border: 1px solid ${colors.primaryColor};
+    }
+  }
+
+
 `;

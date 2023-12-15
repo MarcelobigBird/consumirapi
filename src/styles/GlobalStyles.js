@@ -29,6 +29,11 @@ export default createGlobalStyle`
     border-radius: 4px;
 
     font-weight: 700;
+    transition: all 300ms;
+  }
+
+  button:hover {
+    filter: brightness(75%);
   }
 
   a {
@@ -40,11 +45,11 @@ export default createGlobalStyle`
     list-style: none;
   }
 
-  body .Toastify .Toastify_toast-container .Toastify__toas--success {
+  body .Toastify .Toastify__toast-container .Toastify__toast--success {
     background: ${colors.successColor};
   }
 
-  body .Toastify .Toastify_toast-container .Toastify__toas--error {
+  body .Toastify .Toastify__toast-container .Toastify__toast--error {
     background: ${colors.errorColor};
   }
 `;
