@@ -29,6 +29,5 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/react-in-jsx-scope': 'off',
     'no-undef': 'off',
-    'no-unused-vars': 0,
   },
 };

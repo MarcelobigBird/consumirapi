@@ -6,6 +6,9 @@ export const Form = styled.form`
   flex-direction: column;
   margin-bottom: 20px;
 
+  label:nth-child(1) {
+    margin-top: 25px;
+  }
 
   label {
     display: flex;

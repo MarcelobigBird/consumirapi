@@ -18,6 +18,6 @@ Loading.defaultProps = {
   isLoading: false,
 };
 
-Loading.proTypes = {
+Loading.propTypes = {
   isLoading: PropTypes.bool,
 };
