@@ -4,7 +4,7 @@ import { get } from 'lodash';
 import { FaUserCircle, FaEdit, FaWindowClose, FaExclamation } from 'react-icons/fa';
 
 import { Container } from '../../styles/GlobalStyles';
-import { AlunoContainer, ProfilePicture } from './styled';
+import { AlunoContainer, ProfilePicture, NovoAluno } from './styled';
 import axios from '../../services/axios';
 
 import Loading from '../../components/Loading';
@@ -62,6 +62,8 @@ export default function Alunos() {
       <Loading isLoading={isLoading} />
       <h1>Alunos</h1>
 
+      <NovoAluno to="/aluno/">Novo Aluno</NovoAluno>
+
       <AlunoContainer>
         {alunos.map((aluno, index) => (
           <div key={String(aluno.id)}>
@@ -76,7 +78,7 @@ export default function Alunos() {
             <span>{aluno.nome}</span>
             <span>{aluno.email}</span>
 
-            <Link to={`/aluno${aluno.id}/edit`}>
+            <Link to={`/aluno/${aluno.id}/edit`}>
               <FaEdit size={16} />
             </Link>
 

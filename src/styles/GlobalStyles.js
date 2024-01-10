@@ -37,6 +37,7 @@ export default createGlobalStyle`
   }
 
   a {
+    
     text-decoration: none;
     color: ${colors.primaryColor};
   }
@@ -64,6 +65,6 @@ export const Container = styled.section`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   h1 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 `;
